@@ -52,6 +52,20 @@
                             "url": "https://dataforseo.com/",
                             "meta": {
                                 "onpage_score": 98.17,
+                                "page_timing": {
+                                    "time_to_interactive": 812,
+                                    "dom_complete": 812,
+                                    "largest_contentful_paint": 0,
+                                    "first_input_delay": 0,
+                                    "connection_time": 13,
+                                    "time_to_secure_connection": 17,
+                                    "request_sent_time": 0,
+                                    "waiting_time": 0,
+                                    "download_time": 5,
+                                    "duration_time": 35,
+                                    "fetch_start": 0,
+                                    "fetch_end": 35
+                                },
                                 "title": "Powerful API Stack For Data-Driven SEO Tools – DataForSEO",
                                 "charset": 65001,
                                 "follow": true,
@@ -160,22 +174,7 @@
                                     "twitter:label2": "Time to read",
                                     "twitter:data2": "23 minutes"
                                 }
-                            },
-                            "page_timing": {
-                                "time_to_interactive": 812,
-                                "dom_complete": 812,
-                                "largest_contentful_paint": 0,
-                                "first_input_delay": 0,
-                                "connection_time": 13,
-                                "time_to_secure_connection": 17,
-                                "request_sent_time": 0,
-                                "waiting_time": 0,
-                                "download_time": 5,
-                                "duration_time": 35,
-                                "fetch_start": 0,
-                                "fetch_end": 35
-                            },
-                            
+                            }, 
                             "total_dom_size": 3731747,
                             "custom_js_response": null,
                             "resource_errors": {
