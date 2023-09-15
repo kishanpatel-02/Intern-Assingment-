@@ -1,11 +1,11 @@
-const express = require('express');
-const fetch = require('node-fetch');
-const cors = require('cors');
-const { type } = require('@testing-library/user-event/dist/type');
-const axios = require('axios');
+import express, { json } from 'express';
+// import fetch from 'node-fetch';
+import cors from 'cors';
+// const { type } = require('@testing-library/user-event/dist/type');
+import axios from 'axios';
 const app = express();
 
-app.use(express.json());
+app.use(json());
 
 app.use(cors({
     origin: '*',
