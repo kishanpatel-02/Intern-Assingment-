@@ -13,7 +13,7 @@ const Homepage = () => {
         e.preventDefault();
         setLoading(false);
         let error = false;
-        const response = await fetch('http://localhost:3001/api/dataforseo/', {
+        const response = await fetch('https://proxy-for-intern-assignment.onrender.com/api/dataforseo/', {
             method: 'POST',
             mode: 'cors',
             headers: {
