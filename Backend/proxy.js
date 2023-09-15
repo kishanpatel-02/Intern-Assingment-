@@ -24,8 +24,8 @@ app.post('/api/dataforseo', async (req, res) => {
                 url: 'https://api.dataforseo.com/v3/on_page/instant_pages',
                 method: 'POST',
                 auth: {
-                    username: 'dhruvghevariya2005@gmail.com',
-                    password: 'fde2d454fd9624c4'
+                    username: 'namanbhagat1414@gmail.com',
+                    password: '87a8f6a2466c1114'
                 },
                 data: post_array2,
                 headers: {
