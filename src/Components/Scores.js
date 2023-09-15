@@ -1,10 +1,11 @@
 import React from 'react'
-import data from './Data.json'
+import { useSelector } from 'react-redux';
 import 'react-circular-progressbar/dist/styles.css';
 import Circular from './Circular';
 import Circular2 from './Circular2';
 const Scores = () => {
-    const percentage = data.tasks[0].result[0].items[0].meta.onpage_score
+    const data = useSelector(state => state.data)
+    const percentage = data[0].result[0].items[0].onpage_score
     const performance = 60
     const accessibility = 85
     const bestPractices = 89

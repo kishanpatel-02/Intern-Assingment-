@@ -1,38 +1,20 @@
 import React from 'react'
-import Data from './Data.json'
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import correct from './images/correct.jpg'
 import wrong from './images/wrong.png'
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import { styled } from '@mui/material/styles';
+import {useSelector} from 'react-redux'
 
-
-const bull = (
-    <Box
-        component="span"
-        sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
-        •
-    </Box>
-);
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
 
 const Checks = () => {
-    const array = Data.tasks[0].result[0].items[0].checks
+    const dataforclg = useSelector(state=>state.data)
+    const array = dataforclg[0].result[0].items[0].checks
     return (
-        <div style={{ width: '80%', height: '60%', backgroundColor: 'white', margin: 'auto' }}>
-            <p style={{ textAlign: 'center', fontSize: '1.5rem', fontWeight: '500' }}>Checks Of Website</p>
+        <div style={{ width: '90%', height: '60%', backgroundColor: 'white', margin: 'auto' }}>
+            <p style={{ marginLeft:'3%', fontSize: '1.5rem', fontWeight: '500' }}>Checks Of Website</p>
             <Box sx={{ flexGrow: 1 }} style={{ paddingBottom: '5%' }}>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     <Grid item xs={2} sm={4} md={4} style={{ margin: " 0 0% 2% 0%" }}>
@@ -73,7 +55,7 @@ const Checks = () => {
                                         <img src={array.size_greater_than_3mb ? correct : wrong} style={{ width: '8%', height: '8%', marginTop: '15%', borderRadius: '10%' }} alt="" />
                                         <div style={{ marginLeft: '2%' }}>
                                            <p style={{fontSize:'1.2rem',fontWeight:'550',fontFamily:'Roboto'}}>Size</p>
-                                            <p style={{fontSize:'1rem',color:'gray',fontFamily:'Ubuntu'}}>The size of your page is too large. This can negatively impact your page load speed and user experience.</p>
+                                            <p style={{fontSize:'1rem',color:'gray',fontFamily:'Ubuntu'}}>The size of your page is too large. This can negatively impact your page load speed and user experience.Nothing this so much amazing</p>
                                         </div>
                                     </div>
                                 </Typography>
@@ -118,7 +100,7 @@ const Checks = () => {
                                         <img src={array.low_content_rate ? correct : wrong} style={{ width: '8%', height: '8%', marginTop: '15%', borderRadius: '10%' }} alt="" />
                                         <div style={{ marginLeft: '2%' }}>
                                            <p style={{fontSize:'1.2rem',fontWeight:'550',fontFamily:'Roboto'}}> Low Content Rate</p>
-                                            <p style={{fontSize:'1rem',color:'gray',fontFamily:'Ubuntu'}}>Your page has a low content rate. This can negatively impact your page load speed and user experience.</p>
+                                            <p style={{fontSize:'1rem',color:'gray',fontFamily:'Ubuntu'}}>Your page has a low content rate. This can negatively impact your page load speed and user experience.Nothing this is so much amazing.</p>
                                         </div>
                                     </div>
                                 </Typography>

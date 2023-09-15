@@ -1,12 +1,13 @@
 import React from 'react'
 import data from './Data.json'
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import Circular from './Circular';
 import Square from './images/sqaure.png';
 import Circle from './images/circle.jpg'
 import Triangle from './images/triangle.png'
+import { useSelector } from 'react-redux';
 const Speed = () => {
-    const array = data.tasks[0].result[0].items[0].meta.page_timing
+    const data = useSelector(state => state.data)
+    const array = data[0].result[0].items[0].page_timing
     return (
         <>
             <div style={{ display: 'flex', flexDirection: 'row' }}>
